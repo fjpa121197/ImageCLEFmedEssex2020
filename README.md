@@ -14,6 +14,6 @@ Supervised by: Dr Alba García Seco de Herrera
 - feat_extract_tun: Include code that was used to extract features using fine-tuning.
 - content_selection_all.py: Sample code that is used to assign concepts to a query image.
 
--*It is needed to check the paths in each script, as they were added according to our machine directories.
--* The images are not shared because of copyright reasons.
+-*It is needed to check the paths in each script, as they were added according to our machine directories.  
+-*The images are not shared because of copyright reasons.
 
