@@ -49,18 +49,17 @@ def extract_store(path_dir,modality):
 
 if __name__ == "__main__":
 
-    #modalities = ["DRAN","DRCO","DRCT","DRMR","DRPE","DRUS","DRXR"]
-    modalities = ["DRAN"]
+    modalities = ["DRAN","DRCO","DRCT","DRMR","DRPE","DRUS","DRXR"]
     for modality in modalities:
-      #path = os.path.join(r'/storage/projects/ce903/Train_images/',modality)
-      #df = extract_store(path,modality)
-      #df.to_csv(r'/storage/projects/ce903/tuned_features/Train_features/Features_%s.csv' %modality, index = False)
-      #path = os.path.join(r'/storage/projects/ce903/Validation_images/',modality)
-      #df = extract_store(path,modality)
-      #df.to_csv(r'/storage/projects/ce903/tuned_features/Val_features/Features_%s.csv' %modality, index = False)
+      path = os.path.join(r'/storage/projects/ce903/Train_images/',modality)
+      df = extract_store(path,modality)
+      df.to_csv(r'/storage/projects/ce903/tuned_features/Train_features/Features_%s.csv' % modality, index = False)
+      path = os.path.join(r'/storage/projects/ce903/Validation_images/',modality)
+      df = extract_store(path,modality)
+      df.to_csv(r'/storage/projects/ce903/tuned_features/Val_features/Features_%s.csv' % modality, index = False)
       path = os.path.join(r'/storage/projects/ce903/test_bench_images/',modality)
       df = extract_store(path,modality)
-      df.to_csv(r'/storage/projects/ce903/tuned_features/test_features/Features_%s.csv' %modality, index = False)
+      df.to_csv(r'/storage/projects/ce903/tuned_features/test_features/Features_%s.csv' % modality, index = False)
       
     
     print(datetime.now() - startTime)   
