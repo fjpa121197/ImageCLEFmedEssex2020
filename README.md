@@ -10,7 +10,7 @@ Information of the competition: https://www.imageclef.org/2020/medical/caption
 Supervised by: Dr Alba García Seco de Herrera
 
 ## The contents of this repository are the following:
-- feat_extract_notun: Includes the python scripts used to extract the features of images from each modality without fine-tuning.
+- extract_features_notun.py: Includes the python scripts used to extract the features of images from each modality without fine-tuning.
 - feat_extract_tun: Include code that was used to extract features using fine-tuning and trained models for each modality.
 - content_selection_all.py: Sample code that is used to assign concepts to a query image.
 
