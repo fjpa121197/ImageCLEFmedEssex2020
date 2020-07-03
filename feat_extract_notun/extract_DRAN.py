@@ -50,18 +50,28 @@ def extract_store(path_dir):
     
     return df_store 
 
-if os.path.isfile(r'/storage/projects/ce903/deep_feat_extract/model.h5'):
-    print("Model already in disk")
-    folder = 'DRAN'
-    path = os.path.join(r'/storage/projects/ce903/Train_images/',folder)
-    print(path)
-    df = extract_store(path)
-    df.to_csv(r'/storage/projects/ce903/deep_feat_extract/Features_%s.csv' %folder, index = False)
-else:
-    print("Load model :)")
-    load_model_disk()
+
+if __name__ == "__main__":
     
-print(datetime.now() - startTime)   
+    folders = ["DRAN","DRCO","DRCT","DRMR","DRPE","DRUS","DRXR"]
+    
+    if os.path.isfile(r'/storage/projects/ce903/deep_feat_extract/model.h5'):
+        print("Model already in disk")
+        for folder in folders:
+            path = os.path.join(r'/storage/projects/ce903/Train_images/',folder)
+            #print(path)
+            df = extract_store(path)
+            df.to_csv(r'/storage/projects/ce903/deep_feat_extract/Features_%s.csv' % folder, index = False)
+    else:
+        print("Load model :)")
+        load_model_disk()
+        for folder in folders:
+            path = os.path.join(r'/storage/projects/ce903/Train_images/',folder)
+            #print(path)
+            df = extract_store(path)
+            df.to_csv(r'/storage/projects/ce903/deep_feat_extract/Features_%s.csv' % folder, index = False)
+
+    print(datetime.now() - startTime)   
 
 
 
