@@ -11,7 +11,7 @@ Supervised by: Dr Alba García Seco de Herrera
 
 ## The contents of this repository are the following:
 - feat_extract_notun: Includes the python scripts used to extract the features of images from each modality without fine-tuning.
-- feat_extract_tun: Include code that was used to extract features using fine-tuning.
+- feat_extract_tun: Include code that was used to extract features using fine-tuning and trained models for each modality.
 - content_selection_all.py: Sample code that is used to assign concepts to a query image.
 
 It is needed to check the paths in each script, as they were added according to our machine directories.    
