@@ -13,7 +13,7 @@ Supervised by: Dr Alba García Seco de Herrera
 - extract_features_notun.py: Includes the python scripts used to extract the features of images from each modality without fine-tuning.
 - feat_extract_tun: Include code that was used to extract features using fine-tuning and trained models for each modality.
 - content_selection_all.py: Sample code that is used to assign concepts to a query image.
-
+- Caption Task Paper Essex 2020: Research paper describing the different methods and results in the competition.
 It is needed to check the paths in each script, as they were added according to our machine directories.    
 The images are not shared because of copyright reasons.    
 
