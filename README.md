@@ -17,3 +17,6 @@ Supervised by: Dr Alba García Seco de Herrera
 It is needed to check the paths in each script, as they were added according to our machine directories.    
 The images are not shared because of copyright reasons.    
 
+<a href="https://fury.co/f/partner">
+  <img src="//badge.fury.io/fp/gemfury.svg" alt="Private Repository">
+</a>
